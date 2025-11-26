@@ -1,0 +1,336 @@
+1. Q: Which best describes you?
+   Q_ref: 1114b1de-3efc-4f04-9f69-b9e0a8963915
+   A: I'm open to pushing my comfort zone—I value experiencing new worlds and cultures that are different from my own
+   A_ref: 1114b1de-3efc-4f04-9f69-b9e0a8963915
+   Match: EXACT
+
+2. Q: People have, at most, 50-60 years to see the world. While this seems like plenty of time, life gets busy. 
+
+Which statements apply to you?  You can choose more than one answer.
+   Q_ref: 267f9400-8be6-44c6-a10b-03fcb91d9bfb
+   A: I see travel primarily as a way to explore as much of the world as I can during my lifetime, within reason.
+   A_ref: 267f9400-8be6-44c6-a10b-03fcb91d9bfb
+   Match: FUZZY
+
+3. Q: Which best describes you?
+   Q_ref: 2cd5a8f0-4493-42a1-a8f1-587553abf2a0
+   A: *I like both*—I like a mix of cities and natural environments
+   A_ref: 2cd5a8f0-4493-42a1-a8f1-587553abf2a0
+   Match: EXACT
+
+4. Q: What kind of landscapes do you _*enjoy or have an interest in*_? Rate each choice from 0 (no interest) to 10 (love it). Feel free to *skip* any activity you rate *0-3*.
+   Q_ref: 78a25d81-f210-4f01-babc-8ef7288c595a
+   A: Beaches, coastlines, oceans 10 Mountains 10 Lakes, rivers, waterfalls 10 Forests 10 Vineyards, wine regions 10 Wildlife habitat 10 Rainforests 10 Deserts 10
+   A_ref: 78a25d81-f210-4f01-babc-8ef7288c595a
+   Match: EXACT
+
+5. Q: How interested are you in history and culture?
+   Q_ref: f20c83f0-bff9-4f78-88d5-ba5eac09241b
+   A: I'm really interested in exploring history and culture on my trips; it's a big part of why I travel
+   A_ref: f20c83f0-bff9-4f78-88d5-ba5eac09241b
+   Match: EXACT
+
+6. Q: Generally, what's your budget for travel?
+   Q_ref: e0704e2c-0652-4bca-9452-ee35205359aa
+   A: I'm on a modest budget
+   A_ref: e0704e2c-0652-4bca-9452-ee35205359aa
+   Match: EXACT
+
+7. Q: Keeping in mind your purpose for travel, where are you on the spectrum below?
+
+*Relaxed:* I'm on vacation, and prefer not to jam pack my schedule with things to see and do
+
+*Standard:* I'm on vacation but I definitely want to see and get a feel for places
+
+*Ambitious:* I want to see and do as much as possible within reason
+   Q_ref: 690ca8fe-7ea1-460f-a8ad-d642a94c5652
+   A: 8 / 10
+   A_ref: 690ca8fe-7ea1-460f-a8ad-d642a94c5652
+   Match: FUZZY
+
+8. Q: Travel often requires some walking. How much walking would you consider reasonable or desirable each day?
+   Q_ref: c29deb10-104d-4071-b71f-ddac0b7d7106
+   A: More than a few miles a day (5+ miles)
+   A_ref: c29deb10-104d-4071-b71f-ddac0b7d7106
+   Match: EXACT
+
+9. Q: How physically fit are you?
+   Q_ref: 4823851a-c4bb-4010-8043-45ac65869dfc
+   A: 7 / 10
+   A_ref: 4823851a-c4bb-4010-8043-45ac65869dfc
+   Match: EXACT
+
+10. Q: Which types of exercise do you _*enjoy and do regularly*_? Rate each choice from 0 (no interest) to 5 (love it). Feel free to *skip* any activity you rate *0*.
+   Q_ref: e9dab84d-e744-4ddd-95b7-9bc47223a7a0
+   A: Walking, Hiking 5 Yoga 5
+   A_ref: e9dab84d-e744-4ddd-95b7-9bc47223a7a0
+   Match: EXACT
+
+11. Q: How much do you enjoy being outdoors and doing outdoor activities like hiking, skiing, biking, sailing, picnics, etc.?
+   Q_ref: 55f8f837-110b-4170-a376-068b75b72304
+   A: 10 / 10
+   A_ref: 55f8f837-110b-4170-a376-068b75b72304
+   Match: EXACT
+
+12. Q: Which of these outdoor activities do you _*enjoy or have an interest in*_? Rate each choice from 0 (no interest) to 5 (love it). Feel free to *skip* any activity you rate* 0*.
+   Q_ref: 07501939-fede-4ac5-b7d1-24ffa20ac36a
+   A: Cycling (2E) 3 Picnics 5 Horseback Riding 4 Birding 3 Sailing 2 Motorboating 2 Paddleboarding 1 Snorkeling 4 Ice Skating 3 Kite Flying 4
+   A_ref: 07501939-fede-4ac5-b7d1-24ffa20ac36a
+   Match: EXACT
+
+13. Q: Which of these other outdoor activities do you* *_*enjoy or have an interest in*_? Rate each choice from 0 (no interest) to 5 (love it). Feel free to *skip* any activity you rate *0*.
+   Q_ref: f4bdb88f-9dd1-4d7a-965f-e7a5fe4ac670
+   A: Mountain Biking 2 Camping 3 Hiking/Trekking 5 Backpacking (Trekking with Camping) 1 Kayaking, Canoeing 2 Rafting 4 Skiing, Snowboarding 1 Nature Photography 4 Landscape Painting/Drawing 4
+   A_ref: f4bdb88f-9dd1-4d7a-965f-e7a5fe4ac670
+   Match: EXACT
+
+14. Q: Which animals and types of wildlife do you like? Rate each choice from 0 (no interest) to 5 (love it). Feel free to *skip* any choice you rate *0*.
+   Q_ref: 588e3aff-bcbb-4aca-ac57-73ea37e8a455
+   A: Dogs 5 Cats 5 Birds 5 Butterflies 5 Fish 5 Horses 5 Dinosaurs 5 Zoos 5 Aquariums 5 Marine life, e.g., sea otters, penguins, whales, sharks 5 Wildlife: elephants, lions, tigers, giraffes, koalas, kangaroos, pandas, zebras 5
+   A_ref: 588e3aff-bcbb-4aca-ac57-73ea37e8a455
+   Match: FUZZY
+
+15. Q: Which performing arts do you enjoy? Rate each choice from 0 (no interest) to 5 (love it).
+   Q_ref: 76860241-31a4-432b-b8ab-80d491efb134
+   A: Theater 4 Ballet 4 Symphony 4
+   A_ref: 76860241-31a4-432b-b8ab-80d491efb134
+   Match: FUZZY
+
+16. Q: How much do you enjoy _*watching*_ sports, e.g., soccer, basketball, Formula 1, summer Olympics?
+   Q_ref: b9b1dd2e-c18a-4480-a3c0-9f1e05fa8942
+   A: 4 / 10
+   A_ref: b9b1dd2e-c18a-4480-a3c0-9f1e05fa8942
+   Match: EXACT
+
+17. Q: Which sporting events do you_ _enjoy_ __*watching*_? Rate each choice from 0 (no interest) to 5 (love it). Feel free to *skip* any sport you rate *0*.
+   Q_ref: 2cbe391e-8de0-47f5-9cff-3e70a0a3aaab
+   A: Soccer 2 Basketball 4 Motorsports: F1, NASCAR 4 Baseball 3 Ice Hockey 3 Summer Olympics 5 Winter Olympics 5
+   A_ref: 2cbe391e-8de0-47f5-9cff-3e70a0a3aaab
+   Match: EXACT
+
+18. Q: How much do you enjoy _*playing*_ sports, e.g., golf, soccer, or tennis?
+   Q_ref: f810e232-a9ed-4209-9cc5-61e12356649b
+   A: 4 / 10
+   A_ref: f810e232-a9ed-4209-9cc5-61e12356649b
+   Match: EXACT
+
+19. Q: What else are you passionate about? Rate each choice from 0 (no interest) to 5 (love it). Feel free to *skip* any choice you rate *0*.
+   Q_ref: 6aa7aaf6-b53b-4259-a514-7ea49dcf7d94
+   A: Historic Trains 1 Historic Airplanes 1 Classic Cars 4 Theme Parks, e.g., Disneyland 3 Photography 4 Art 4 Cooking 5 Gardens 4 Painting 4 Reading 5 Listening to Music 5
+   A_ref: 6aa7aaf6-b53b-4259-a514-7ea49dcf7d94
+   Match: FUZZY
+
+20. Q: How important is food in your travel experience?
+   Q_ref: a4e9e89f-4b5f-4d5e-82d6-976933c3f991
+   A: I'm a huge foodie; I love finding good food and trying new things, it's a major reason I travel
+   A_ref: a4e9e89f-4b5f-4d5e-82d6-976933c3f991
+   Match: EXACT
+
+21. Q: Some of our trips involve travel by train or by car. Generally, what is your preference?
+   Q_ref: 708846b6-e3bd-4a98-b9aa-b8e8f58bc968
+   A: I like both/don't have a strong preference
+   A_ref: 708846b6-e3bd-4a98-b9aa-b8e8f58bc968
+   Match: EXACT
+
+22. Q: What's your opinion on road trips?
+   Q_ref: 7916167f-38d5-4c5e-bb71-585551673c29
+   A: I love road trips. I enjoy driving and view it as a great way to see a place or landscape
+   A_ref: 7916167f-38d5-4c5e-bb71-585551673c29
+   Match: EXACT
+
+23. Q: Is there anything you're NOT comfortable doing or fearful of on your trip? Here are some examples to give us a sense.
+   Q_ref: b0066453-a099-47cc-98ae-0d7142fac77a
+   A: Bungee jumping
+   A_ref: b0066453-a099-47cc-98ae-0d7142fac77a
+   Match: EXACT
+
+24. Q: How interested are you in _learning_, e.g., history, science, politics, business, etc.?
+   Q_ref: b3bdbec7-6296-46fe-b19e-c9a302ccfd06
+   A: 8 / 10
+   A_ref: b3bdbec7-6296-46fe-b19e-c9a302ccfd06
+   Match: EXACT
+
+25. Q: Which fields of learning or knowledge interest you? Rate each choice from 0 (no interest) to 5 (love it). Feel free to *skip* any choice you rate *0*.
+   Q_ref: df7987ad-21b4-4942-b584-ea6f3a76f3ac
+   A: Archaeology 2 Architecture 3 Geography 5 Political Science, International Relations 3 Economics and Business 1 Literature 4 Foreign Languages 5 Mathematics 3 Science 4 Engineering 3 Technology 4
+   A_ref: df7987ad-21b4-4942-b584-ea6f3a76f3ac
+   Match: FUZZY
+
+26. Q: Who do you see yourself traveling with?
+   Q_ref: bc95894d-8c84-4469-a268-0476a3c52128
+   A: Friends Spouse Kids Siblings Parents Solo Significant other
+   A_ref: bc95894d-8c84-4469-a268-0476a3c52128
+   Match: EXACT
+
+27. Q: The number one reason people don't travel is because they can't find someone to go with.
+
+If your friends or family aren't able to go, we can introduce you to fun, compatible travelers who want to do the same trip, at the same time as you do. 
+
+Are you open to traveling with new friends introduced to you by us?
+   Q_ref: 29b08b4e-daca-492a-b730-0fafd208f12b
+   A: 5 / 10
+   A_ref: 29b08b4e-daca-492a-b730-0fafd208f12b
+   Match: FUZZY
+
+28. Q: What is your home country?
+   Q_ref: 599a7e2a-260d-4af5-b8d6-a1689e67c446
+   A: United States
+   A_ref: 599a7e2a-260d-4af5-b8d6-a1689e67c446
+   Match: EXACT
+
+29. Q: Which of the 7 continents have you visited so far?
+   Q_ref: 055dbe6f-eda6-4d47-abce-63f83022bcd2
+   A: Europe Asia, including Turkey and the Middle East North America, including Mexico and Central America Oceania, including Australia and New Zealand
+   A_ref: 055dbe6f-eda6-4d47-abce-63f83022bcd2
+   Match: EXACT
+
+30. Q: Where have you traveled in Europe? Click "Other" to add countries you've visited that aren't listed below.
+   Q_ref: 502b179d-f559-4b85-9ae4-d33437e30e49
+   A: Italy United Kingdom France Switzerland Ireland Portugal
+   A_ref: 502b179d-f559-4b85-9ae4-d33437e30e49
+   Match: EXACT
+
+31. Q: Where have you traveled in Asia? Click "Other" to add countries you've visited that aren't listed below.
+   Q_ref: a93b8746-2569-489f-b335-6cb710df78bf
+   A: India Singapore
+   A_ref: a93b8746-2569-489f-b335-6cb710df78bf
+   Match: EXACT
+
+32. Q: Where have you traveled in North America? Click "Other" to add countries you've visited that aren't listed below.
+   Q_ref: b5fca7d0-75be-44c5-a6eb-2f3313e2811f
+   A: United States Mexico
+   A_ref: b5fca7d0-75be-44c5-a6eb-2f3313e2811f
+   Match: EXACT
+
+33. Q: Which of the 7 continents do you think you want to visit next?
+   Q_ref: 8f832b6f-bb8d-4385-a4b3-6dbd66c37179
+   A: Asia, including Turkey and the Middle East South America Africa Europe North America, including Mexico and Central America Oceania, including Australia and New Zealand Antarctica
+   A_ref: 8f832b6f-bb8d-4385-a4b3-6dbd66c37179
+   Match: EXACT
+
+34. Q: Which of these places have you visited in Italy?
+   Q_ref: b6fa83e9-ded1-44ff-9027-83bbe322bc02
+   A: Rome Venice Florence Tuscany Cinque Terre/Italian Riviera Amalfi Coast Lake region (Lake Como, Maggiore, etc.) Dolomites
+   A_ref: b6fa83e9-ded1-44ff-9027-83bbe322bc02
+   Match: EXACT
+
+35. Q: Where do you live now? 
+
+For example:
+San Francisco
+   Q_ref: b65024a7-94b1-419a-97a3-36328ec43c43
+   A: For example:San Francisco Novato
+   A_ref: b65024a7-94b1-419a-97a3-36328ec43c43
+   Match: FUZZY
+
+36. Q: Where did you grow up? If it was in multiple places or regions, please list them.
+
+For example:
+Seoul, Los Angeles
+   Q_ref: 4fb53974-32d6-4ccb-840d-65dd6a436238
+   A: Mountain View
+   A_ref: 4fb53974-32d6-4ccb-840d-65dd6a436238
+   Match: FUZZY
+
+37. Q: Excluding where you grew up and live now, where _else_ have you lived _for one month or longer, _either abroad or within your home country? 
+
+If you haven't lived anywhere else, put NA. 
+
+For example:
+London, New York, Buenos Aires
+   Q_ref: 9423bb7c-40d4-416f-a76d-b7230306a2b6
+   A: Los Angeles, Washington DC, Perth, Sydney, Coleraine UK
+   A_ref: 9423bb7c-40d4-416f-a76d-b7230306a2b6
+   Match: EXACT
+
+38. Q: What languages do you speak?
+   Q_ref: 95ab8ec6-3886-4d9c-9fe9-2cd25e7e899b
+   A: English Native French Little Bit
+   A_ref: 95ab8ec6-3886-4d9c-9fe9-2cd25e7e899b
+   Match: EXACT
+
+39. Q: What is your age?
+   Q_ref: 01HC5FBM95D7530JBMTK2T1RF0
+   A: 35
+   A_ref: 01HC5FBM95D7530JBMTK2T1RF0
+   Match: EXACT
+
+40. Q: Which college/university did you attend, and when did you graduate (month & year)?
+
+If you did not attend, put NA.
+
+For example: 
+UC Berkeley May 2018
+   Q_ref: 532f89bd-82fd-47f8-b306-3672b6d728f8
+   A: Chapman University, May 2011
+   A_ref: 532f89bd-82fd-47f8-b306-3672b6d728f8
+   Match: EXACT
+
+41. Q: What did you major in?
+
+For example:
+Electrical Engineering
+   Q_ref: bdcc9db8-945d-4d27-9e33-3c099050b6b1
+   A: Film Production - Editing emphasis
+   A_ref: bdcc9db8-945d-4d27-9e33-3c099050b6b1
+   Match: FUZZY
+
+42. Q: What is your field of work or intended field? If you're retired, please put retired and include your previous field of work.
+
+For example:
+Business, marketing
+Retired, lawyer
+   Q_ref: 06465f65-69b5-47ae-8570-21a0b2d7713c
+   A: Film Editing
+   A_ref: 06465f65-69b5-47ae-8570-21a0b2d7713c
+   Match: EXACT
+
+43. Q: How often do you travel for work?
+   Q_ref: fcb2ada9-48ed-437b-9066-cd8e7455aa61
+   A: 1-2 times a year
+   A_ref: fcb2ada9-48ed-437b-9066-cd8e7455aa61
+   Match: EXACT
+
+44. Q: Where do you usually travel for work? List the city or country.
+
+For example:
+Berlin, Tokyo, Miami, South Africa
+   Q_ref: c9e22f33-dd11-49c6-96e3-8b3ddeb4ae36
+   A: Los Angeles
+   A_ref: c9e22f33-dd11-49c6-96e3-8b3ddeb4ae36
+   Match: EXACT
+
+45. Q: Are you traveling for a special occasion?
+   Q_ref: c871dfb6-3557-4ef1-b016-ea27dc0b4efb
+   A: No, not traveling for a special occasion
+   A_ref: c871dfb6-3557-4ef1-b016-ea27dc0b4efb
+   Match: EXACT
+
+46. Q: What is your gender?
+   Q_ref: 8acf8255-f9a5-4b0a-a89b-505e8700f622
+   A: Female
+   A_ref: 8acf8255-f9a5-4b0a-a89b-505e8700f622
+   Match: EXACT
+
+47. Q: Do you identify with an ethnic, religious, racial, sexual orientation, or other group that could affect whom you travel with, where you travel, or what activities might interest you? If so, please list the group(s) below.
+
+If not, put NA
+
+For example:
+Jewish, Black, Gay
+   Q_ref: 75665a1b-d796-4368-9ca9-d028e72480f1
+   A: NA
+   A_ref: 75665a1b-d796-4368-9ca9-d028e72480f1
+   Match: FUZZY
+
+48. Q: If you have kids, what are their ages and gender? 
+
+For example: 
+daughter 12, son 10
+
+If not, put NA
+   Q_ref: 6b3bcf0d-ef6b-434b-b832-3fc5f1525196
+   A: NA
+   A_ref: 6b3bcf0d-ef6b-434b-b832-3fc5f1525196
+   Match: EXACT
+

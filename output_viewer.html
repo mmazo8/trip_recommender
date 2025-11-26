@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <title>Trip Recommender Output Viewer</title>
+    <style>
+        :root {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                "Segoe UI", sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            max-width: 1200px;
+            margin-inline: auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0 0 8px;
+        }
+
+        .page-header {
+            margin-bottom: 24px;
+        }
+
+        .page-header p {
+            margin: 4px 0 0;
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+
+        .input-panel {
+            background: #020617;
+            border-radius: 12px;
+            padding: 16px;
+            border: 1px solid #1f2937;
+            margin-bottom: 24px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 140px;
+            max-height: 250px;
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #374151;
+            background: #020617;
+            color: #e5e7eb;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+                "Liberation Mono", "Courier New", monospace;
+            font-size: 0.85rem;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+
+        .controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-top: 8px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            border-radius: 999px;
+            border: none;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            background: linear-gradient(135deg, #38bdf8, #6366f1);
+            color: white;
+            box-shadow: 0 8px 20px rgba(56, 189, 248, 0.25);
+            transition: transform 0.1s ease, box-shadow 0.1s ease,
+                filter 0.1s ease;
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+            filter: brightness(1.1);
+            box-shadow: 0 10px 24px rgba(56, 189, 248, 0.35);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
+        }
+
+        .hint {
+            font-size: 0.8rem;
+            color: #9ca3af;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
+            gap: 24px;
+            align-items: flex-start;
+        }
+
+        @media (max-width: 900px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section {
+            background: #020617;
+            border-radius: 12px;
+            border: 1px solid #1f2937;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .section-header span.label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #6b7280;
+        }
+
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 4px;
+        }
+
+        .chip {
+            font-size: 0.7rem;
+            padding: 3px 8px;
+            border-radius: 999px;
+            border: 1px solid #374151;
+            color: #9ca3af;
+            background: #020617;
+            white-space: nowrap;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+        }
+
+        .card {
+            background: #020617;
+            border-radius: 12px;
+            border: 1px solid #1f2937;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-rank {
+            position: absolute;
+            top: 8px;
+            right: 12px;
+            font-size: 0.75rem;
+            color: #9ca3af;
+        }
+
+        .card-title {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .card-score {
+            font-size: 0.9rem;
+            color: #a5b4fc;
+            font-weight: 500;
+        }
+
+        .card-meta {
+            font-size: 0.75rem;
+            color: #9ca3af;
+        }
+
+        .card-rationale {
+            margin-top: 4px;
+            font-size: 0.8rem;
+            color: #d1d5db;
+        }
+
+        .audit-table-wrapper {
+            max-height: 420px;
+            overflow: auto;
+            border-radius: 10px;
+            border: 1px solid #1f2937;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8rem;
+        }
+
+        th,
+        td {
+            padding: 6px 8px;
+            text-align: left;
+            border-bottom: 1px solid #111827;
+        }
+
+        th {
+            position: sticky;
+            top: 0;
+            background: #020617;
+            z-index: 1;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #9ca3af;
+        }
+
+        tr:nth-child(even) td {
+            background: #020617;
+        }
+
+        tr:nth-child(odd) td {
+            background: #020617;
+        }
+
+        .pill-soft {
+            padding: 2px 6px;
+            border-radius: 999px;
+            font-size: 0.7rem;
+            border: 1px solid #374151;
+            background: #020617;
+            color: #e5e7eb;
+        }
+
+        .status {
+            font-size: 0.8rem;
+            color: #9ca3af;
+            margin-top: 6px;
+        }
+
+        .status strong {
+            color: #e5e7eb;
+        }
+
+        .error {
+            color: #fca5a5;
+        }
+
+        .success {
+            color: #6ee7b7;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="page-header">
+        <h1>Transfer Kit v4 — Output Viewer</h1>
+        <p>
+            Paste your json or load latest supabase row below to visualize
+            Top 8, Next 5, and the full 34-trip audit.
+        </p>
+    </header>
+
+    <section class="input-panel">
+        <h3>1. Paste JSON Output</h3>
+        <textarea id="jsonInput" placeholder='Paste JSON from output_corinne.json here...'></textarea>
+        <div class="controls">
+            <div>
+                <button id="renderBtn">Render Output</button>
+                <button id="loadLatestBtn">Load Latest From Supabase</button>
+
+            </div>
+        </div>
+        <div id="userInfo" class="status"></div>
+        <div id="status" class="status"></div>
+    </section>
+
+    <main class="layout">
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <span class="label">Output 1</span>
+                    <h2>Pure Fit — Top 8</h2>
+                </div>
+            </div>
+            <div id="top8Container" class="grid"></div>
+
+            <div class="section" style="margin-top: 16px;">
+                <div class="section-header">
+                    <div>
+                        <span class="label">Bench</span>
+                        <h2>Next 5</h2>
+                    </div>
+                </div>
+                <div id="next5Container" class="grid"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <div>
+                    <span class="label">Audit</span>
+                    <h2>All 34 — Ranked</h2>
+                </div>
+            </div>
+            <div class="audit-table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Trip</th>
+                            <th>Score</th>
+                            <th>Tier</th>
+                            <th>PB/SD</th>
+                            <th>Continent</th>
+                        </tr>
+                    </thead>
+                    <tbody id="auditBody"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // --- Supabase config ---
+        const SUPABASE_URL = "https://tdhclvlyssxykszvcudi.supabase.co";
+        const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRkaGNsdmx5c3N4eWtzenZjdWRpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQwMDU1OTMsImV4cCI6MjA3OTU4MTU5M30.bW_BSrlMi4sAfBowopJyRhNYcBe_ANFXMHizTuCDUok";
+
+        const supabaseClient = window.supabase.createClient(
+            SUPABASE_URL,
+            SUPABASE_ANON_KEY
+        );
+
+
+        const inputEl = document.getElementById("jsonInput");
+        const renderBtn = document.getElementById("renderBtn");
+        const statusEl = document.getElementById("status");
+
+        const top8Container = document.getElementById("top8Container");
+        const next5Container = document.getElementById("next5Container");
+        const auditBody = document.getElementById("auditBody");
+
+        function clearUI() {
+            top8Container.innerHTML = "";
+            next5Container.innerHTML = "";
+            auditBody.innerHTML = "";
+            statusEl.textContent = "";
+            statusEl.className = "status";
+        }
+
+        function getTripTitle(trip) {
+            return (
+                trip.title ||
+                trip.trip_title ||
+                trip.name ||
+                JSON.stringify(trip).slice(0, 40) + "..."
+            );
+        }
+
+        function getTripScore(trip) {
+            return (
+                trip.normalized_score ||
+                trip.score ||
+                trip.final_score ||
+                trip.fit ||
+                null
+            );
+        }
+
+        function getRationale(trip) {
+            return (
+                trip.rationale ||
+                trip.rationale_text ||
+                trip.explanation ||
+                null
+            );
+        }
+
+        function getField(trip, key, fallback = null) {
+            return trip[key] != null ? trip[key] : fallback;
+        }
+
+        function renderCard(trip, index) {
+            const title = getTripTitle(trip);
+            const score = getTripScore(trip);
+            const tier = getField(trip, "tier");
+            const pb_sd = getField(trip, "pb_sd");
+            const continent = getField(trip, "continent");
+            const rationale = getRationale(trip);
+
+            const card = document.createElement("div");
+            card.className = "card";
+
+            const rankEl = document.createElement("div");
+            rankEl.className = "card-rank";
+            rankEl.textContent = "#" + (index + 1);
+
+            const titleEl = document.createElement("div");
+            titleEl.className = "card-title";
+            titleEl.textContent = title;
+
+            const scoreEl = document.createElement("div");
+            scoreEl.className = "card-score";
+            scoreEl.textContent =
+                score != null ? `Score: ${Number(score).toFixed(1)}` : "Score: —";
+
+            const metaEl = document.createElement("div");
+            metaEl.className = "card-meta";
+
+            const bits = [];
+            if (tier != null) bits.push(`Tier ${tier}`);
+            if (pb_sd != null) bits.push(pb_sd);
+            if (continent != null) bits.push(continent);
+
+            metaEl.textContent = bits.join(" · ");
+
+            card.appendChild(rankEl);
+            card.appendChild(titleEl);
+            card.appendChild(scoreEl);
+            card.appendChild(metaEl);
+
+            if (rationale) {
+                const rEl = document.createElement("div");
+                rEl.className = "card-rationale";
+                rEl.textContent = rationale;
+                card.appendChild(rEl);
+            }
+
+            return card;
+        }
+
+        function renderAuditRow(trip, index) {
+            const tr = document.createElement("tr");
+
+            const title = getTripTitle(trip);
+            const score = getTripScore(trip);
+            const tier = getField(trip, "tier");
+            const pb_sd = getField(trip, "pb_sd");
+            const continent = getField(trip, "continent");
+
+            const rankTd = document.createElement("td");
+            rankTd.textContent = index + 1;
+
+            const titleTd = document.createElement("td");
+            titleTd.textContent = title;
+
+            const scoreTd = document.createElement("td");
+            scoreTd.textContent =
+                score != null ? Number(score).toFixed(1) : "—";
+
+            const tierTd = document.createElement("td");
+            tierTd.textContent = tier != null ? "Tier " + tier : "—";
+
+            const pbTd = document.createElement("td");
+            pbTd.textContent = pb_sd || "—";
+
+            const contTd = document.createElement("td");
+            contTd.textContent = continent || "—";
+
+            tr.appendChild(rankTd);
+            tr.appendChild(titleTd);
+            tr.appendChild(scoreTd);
+            tr.appendChild(tierTd);
+            tr.appendChild(pbTd);
+            tr.appendChild(contTd);
+
+            return tr;
+        }
+
+        function renderOutput(json) {
+            clearUI();
+
+            if (!json || typeof json !== "object") {
+                statusEl.textContent = "Invalid JSON: no object to render.";
+                statusEl.classList.add("error");
+                return;
+            }
+
+
+            // STATIC schema (because your Python enforces it)
+            const top8 = json.top_8 || [];
+            const next5 = json.next_5 || [];
+            const allRanked = json.audit_table || [];
+
+            if (!Array.isArray(allRanked) || allRanked.length === 0) {
+                statusEl.textContent =
+                    "Parsed JSON, but audit_table is empty or missing. Check output_corinne.json.";
+                statusEl.classList.add("error");
+            } else {
+                statusEl.textContent =
+                    "JSON parsed successfully. Showing Top 8, Next 5, and full ranking.";
+                statusEl.classList.add("success");
+            }
+
+            top8.forEach((trip, idx) => {
+                top8Container.appendChild(renderCard(trip, idx));
+            });
+
+            next5.forEach((trip, idx) => {
+                next5Container.appendChild(renderCard(trip, idx));
+            });
+
+            allRanked.forEach((trip, idx) => {
+                auditBody.appendChild(renderAuditRow(trip, idx));
+            });
+        }
+
+
+
+        renderBtn.addEventListener("click", () => {
+            const raw = inputEl.value.trim();
+            clearUI();
+
+            if (!raw) {
+                statusEl.textContent = "Please paste JSON from your output file first.";
+                statusEl.classList.add("error");
+                return;
+            }
+
+            try {
+                const parsed = JSON.parse(raw);
+                renderOutput(parsed);
+            } catch (err) {
+                console.error(err);
+                statusEl.textContent =
+                    "Error: Could not parse JSON. Make sure you pasted valid JSON.";
+                statusEl.classList.add("error");
+            }
+        });
+
+        const loadLatestBtn = document.getElementById("loadLatestBtn");
+
+        loadLatestBtn.addEventListener("click", async () => {
+            clearUI();
+            statusEl.textContent = "Loading from Supabase...";
+
+            const { data, error } = await supabaseClient
+                .from("trip_outputs")
+                .select("final_json, user_name")
+                .order("created_at", { ascending: false })
+                .limit(1)
+
+            console.log("Supabase Raw Response:", { data, error });
+
+            if (error || !data || data.length === 0) {
+                statusEl.textContent = "Error loading from Supabase.";
+                statusEl.classList.add("error");
+                console.error(error);
+                return;
+            }
+
+            const row = data[0];
+            console.log("Row returned:", row);
+
+            const json = row.final_json;
+            console.log("Loaded JSON:", json);
+
+            if (!json) {
+                statusEl.textContent = "Row loaded, but final_json is NULL or undefined.";
+                statusEl.classList.add("error");
+                return;
+            }
+
+            const userInfoEl = document.getElementById("userInfo");
+            userInfoEl.textContent = `User: ${row.user_name || "Unknown User"}`;
+
+            inputEl.value = JSON.stringify(json, null, 2);
+            renderOutput(json);
+
+            statusEl.textContent = "Loaded from Supabase.";
+            statusEl.classList.add("success");
+        });
+
+
+
+    </script>
+</body>
+
+</html>

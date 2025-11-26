@@ -1,0 +1,24 @@
+# Transfer Kit v4 — 34‑Trip Recommender Logic System (Global‑First v7) **Version:** Global‑First v7 **Date:** Nov 2025 **Filename:** TransferKit_v4.md --- ## §1 Inputs & Outputs * **Trip data:** AI Testing Oct ’25 – Sheet1.csv • Columns: A = Title+Desc · E = Tier (1/2) · F = PB/SD * **User survey:** e.g., Corinne Macro Survey Responses 12‑31‑24.csv, Sasha Macro Survey Responses 11‑20‑24.csv **Outputs:** * **Output 1 (Pure Fit):** Top 8 + Next 5, normalized 100, 3–5 sentence rationales, audit table * **Output 2 (Analytical Breakdown):** All 34 ranked with modifiers, optionally CSV export for Google Sheets --- ## §2 Tier / PB Map **PB (Pillar Base):** Classic Africa · Classic Asia · Classic Europe · Classic California USA **SD (Signature Depth):** Patagonia · Tanzania · Galápagos etc. **Tier 1 / Tier 2 lists:** Same as v3 (canonical 34). --- ## §3 Locked Logic & Weights *(Identical to v3; all explicit + implicit modifiers retained)* See detailed table in v3 § 3 for numeric magnitudes and order. All modifiers capped ±15 % unless otherwise noted; PB/Tier precedence immutable. --- ## §4 Continent Balance & Diversity Enforcement 1️⃣ Soft‑caps (Europe ≤ 3; others ≤ 2) 2️⃣ Diversity floor (+10 boost to missing continent if < 3 represented) 3️⃣ Normalize to 100 --- ## §5 Conditional Rules ISE Elevation · Galápagos Deferral · Age/Breadth Bias · Alpine Redundancy · Islands Independent Count — all retained from v3. --- ## §6 Modifier Precedence Chart
+[1] Hard penalties: Home, Visited, Familiarity Smoothing
+[2] Core scaling: Tier → PB → SD
+[3] Regional & cultural: Adjacency, Breadth‑Phase, Inter‑Continent, Cultural Anchor, Alpine
+[4] Balance passes: Landscape Overlap, Soft‑Cap, Sequential Recovery
+[5] Finalization: Diversity floor → Normalization → Narratives
+--- ## §7 Initialization Audit (Automatic Top 13 Integrity Verification) Runs Output 1 for Corinne and Sasha on load; verifies titles and normalized scores (Δ ≤ 1). --- ## §8 Interpretation of Audit Results ✅ Both PASS → identical to Session 3. ⚠️ Minor FAIL → check Tier Multiplier / Adjacency Dampener. ❌ Major FAIL → re‑upload CSVs and re‑initialize. --- ## §9 Reference Top 13 Outputs **Corinne:** Classic Africa · Peru · Greece · MENA · Patagonia · Spain North · New Zealand · SE Asia · Brazil & Argentina · Scandinavia · Eastern Europe · Germany South · China East **Sasha:** Classic Africa · Classic Asia · Peru · New Zealand · SE Asia · Ireland/Scotland/England · Patagonia · Greece · Scandinavia · Brazil & Argentina · China East · Eastern Europe · French Polynesia --- ## §10 Run Protocol 1️⃣ Upload trip & user CSVs 2️⃣ Paste this kit 3️⃣ System auto‑runs internal Top 13 audit and cross‑session regression audit (§ 13) 4️⃣ If PASS → proceed to run Output 1 for [new User] --- ## §11 Checksum Expectation
+[PASS] Corinne — 13/13 exact matches (Δ≤1)
+[PASS] Sasha — 13/13 exact matches (Δ≤1)
+=== Transfer verification complete ===
+--- ## §12 Cumulative Integrity Chain Every session retains Top 13 reference sets and passes them forward for cross‑session verification. --- ## §13 Process Engineering Rules — Cross‑Session Integrity Audit Protocol **Purpose:** Guarantee session‑to‑session model continuity by automatically comparing the new session’s first Output 1 to the previous session’s verified reference.
+python
+# === Cross‑Session Regression Audit ===
+previous_reference = load_reference("previous_session_reference_top13.json")
+current_output = run_output1("audit_user")
+diffs = compare_rank_and_score(current_output, previous_reference, tolerance=1)
+if not diffs:
+ echo("✅ Cross‑Session Integrity Verified — Model identical to previous session")
+else:
+ echo("⚠️ Cross‑Session Drift Detected:")
+ for d in diffs:
+  echo(f" • {d}")
+save_current_output_as_reference("current_session_reference_top13.json")
+| Phase | Action | Artifact | | ---------------------- | ----------------------------------------- | ---------------------------------- | |  End of Session N  |  Auto‑export Top 13 reference  |  Session_N_reference_top13.json  | |  Start of Session N+1  |  Compare new Output 1 vs prior reference  |  cross_session_audit.log  | |  On PASS  |  Proceed  |  —  | |  On FAIL  |  List mismatches → inspect § 3 weights  |  Manual review  | This ensures an unbroken version‑control ledger of model integrity across sessions. --- **Transfer Kit v4 (Global‑First v7)** is now the authoritative, self‑auditing spec for the 34‑Trip Recommender system and should be used to initialize Session 4 and all subsequent sessions.

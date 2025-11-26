@@ -1,0 +1,34 @@
+Classic Europe: London, Paris, Rome | train, plane | Tier 1 | Primary Breadth | Europe
+Classic Asia: Tokyo, Kyoto, Seoul | train, plane | Tier 1 | Primary Breadth | Asia
+Classic California USA: Los Angeles, Yosemite, Lake Tahoe, San Francisco, Big Sur coast, Santa Barbara | car | Tier 1 | Primary Breadth | North America
+Classic Africa: Cape Town, Garden Route, Kruger National Park (Sabi Sands, etc.), Panorama Route, Victoria Falls, Chobe NP | car, plane | Tier 1 | Primary Breadth | Africa
+Italy North: Milan, Lake Como, Portofino, Florence, Tuscany, Venice | car, train | Tier 1 | Secondary Depth | Europe
+Italy South: Sardinia, Naples, Pompeii, Amalfi Coast/Positano, Paestum, Capri, Rome | train | Tier 2 | Secondary Depth | Europe
+Italy Mountains & Lakes: Venice, Dolomites, Lake Como, Piedmont | car, train | Tier 2 | Secondary Depth | Europe
+France South: Grenoble, Verdon Gorge, Luberon, Cassis, Monaco, Nice | car, train | Tier 1 | Secondary Depth | Europe
+Spain North: Costa Brava, Barcelona, Madrid, Asturias, Picos de Europa, Bilbao, Biarritz | train | Tier 1 | Secondary Depth | Europe
+Portugal: Algarve, Lisbon, Porto, Douro Valley | car, train | Tier 2 | Secondary Depth | Europe
+Switzerland West: Geneva, Annecy, Chamonix, Zermatt, Lauterbrunnen | train, car | Tier 1 | Secondary Depth | Europe
+Switzerland East: Milan, Lugano, Zermatt, Glacier & Bernina Express, St Moritz | train, car | Tier 2 | Secondary Depth | Europe
+Germany South: Stuttgart, Lake Constance, Bavarian Alps, Romantic Road, Salzburg, Berchtesgaden, Hallstatt, Munich | car | Tier 1 | Secondary Depth | Europe
+Ireland, Scotland, England: Dublin, Edinburgh, London | car, train | Tier 2 | Secondary Depth | Europe
+Eastern Europe: Berlin, Prague, Vienna, Budapest | train | Tier 2 | Secondary Depth | Europe
+Scandinavia: Amsterdam, Stockholm, Bergen, Norwegian Fjords | ferry, train | Tier 1 | Secondary Depth | Europe
+Greece: Santorini, Mykonos, Athens, Nafplio, Kefalonia, Zakynthos | ferry, car | Tier 1 | Secondary Depth | Europe
+Southeast Asia: Thai Beaches (Railay Beach, etc.), Bangkok, Angkor Wat, Hanoi | plane | Tier 1 | Secondary Depth | Asia
+India North: Delhi, Corbett Tiger Reserve, Agra, Jaipur | train | Tier 1 | Secondary Depth | Asia
+China East: Hong Kong, Shanghai, Xian, Beijing, Great Wall of China | train | Tier 1 | Secondary Depth | Asia
+Middle East North Africa: Istanbul, Amman, Jerusalem, Petra, Cairo | car, plane | Tier 1 | Secondary Depth | Asia/Africa
+Tanzania: Mount Kilimanjaro, Tarangire NP, Ngorongoro Crater, Serengeti NP | car | Tier 2 | Secondary Depth | Africa
+Seychelles Islands: Mahé, Praslin, Curieuse, La Digue | ferry | Tier 1 | Secondary Depth | Africa
+Mexico: Cancún, Chichén Itza, Oaxaca, Mexico City | car, plane | Tier 2 | Secondary Depth | North America
+Peru: Lima, Sacred Valley, Machu Picchu, Lake Titicaca | car, train, plane | Tier 1 | Secondary Depth | South America
+Galápagos: Santa Cruz, Bartolome, Isabela, San Cristobal | ferry | Tier 2 | Secondary Depth | South America
+Patagonia: El Chaltén, Perito Moreno Glacier, Torres del Paine NP | car | Tier 2 | Secondary Depth | South America
+Costa Rica: Arenál Volcano, Nicoya Peninsula, Monteverde Cloud Forest, Manuel Antonio NP | car | Tier 2 | Secondary Depth | Central America
+Brazil & Argentina: Rio de Janeiro, Iguazú Falls, Pantanal, Buenos Aires | plane, car | Tier 1 | Secondary Depth | South America
+Australia: Melbourne, Great Barrier Reef, Sydney | plane | Tier 2 | Secondary Depth | Oceania
+New Zealand: Christchurch, Queenstown, Milford Sound, Mt Cook NP | car, train | Tier 1 | Secondary Depth | Oceania
+French Polynesia: Tahiti, Mo'orea, Bora Bora, Huahine | ferry | Tier 2 | Secondary Depth | Oceania
+East Coast USA: New York City, Washington DC | train, car | Tier 1 | Secondary Depth | North America
+Southwest National Parks USA: Grand Canyon NP, Bryce Canyon NP, Zion NP, Las Vegas | car | Tier 1 | Secondary Depth | North America

@@ -1,0 +1,297 @@
+{
+  "top_8": [
+    {
+      "title": "Classic Africa",
+      "score": 100,
+      "rationale": "Classic Africa ranks highest due to its Tier 1 status, Classic PB designation, and strong match with user's interest in wildlife, safari, and nature. The user values exploring new cultures and nature deeply, which Classic Africa fulfills with iconic safari experiences and rich cultural heritage. Its continent diversity also supports global balance, being African. Good activity level and travel modes align well with user's active outdoor preferences."
+    },
+    {
+      "title": "Peru",
+      "score": 93,
+      "rationale": "Peru is a top Tier 1 Signature Depth trip with cultural and natural diversity that fits the user's love for mountains, wildlife, and culture. It aligns with the user's ambition and physical fitness levels, supporting active hiking and exploration. The historical and archaeological richness appeals to their strong interest in history and culture."
+    },
+    {
+      "title": "Classic Europe",
+      "score": 91,
+      "rationale": "Classic Europe offers iconic cultural, historical, and culinary experiences matching the user's strong preference for history, culture, and food. Its Tier 1 and PB status and classic urban and scenic mix aligns well with the user's travel style. The user\u2019s prior European travel slightly reduces novelty but is balanced by the breadth and depth of experiences."
+    },
+    {
+      "title": "Southeast Asia",
+      "score": 88,
+      "rationale": "Southeast Asia's rich cultural, natural, and culinary themes match the user's enthusiasm for diverse landscapes and cultural depth. As a Tier 1 SD trip in Asia, it benefits from the user's interest in Asian travel and desire for new cultural worlds. Its warm climates and accessible pace suit the user's reasonable but active comfort level."
+    },
+    {
+      "title": "Brazil & Argentina",
+      "score": 87,
+      "rationale": "Brazil & Argentina\u2019s mix of wildlife, mountains, and vibrant culture aligns well with the user's outdoor passion and love for cultural depth. Its Tier 1 SD status and South American location provide diversity and a moderate activity level suitable for the user's profile. The user shows interest in South America and nature combined with cultural experiences."
+    },
+    {
+      "title": "New Zealand",
+      "score": 85,
+      "rationale": "New Zealand offers outstanding natural scenery and outdoor adventure that strongly matches the user's love of landscapes and active, physically engaging travel. As a Tier 1 SD trip in Oceania, it helps maintain continent diversity and fits the user's preference for a mix of outdoor activities and natural settings."
+    },
+    {
+      "title": "Classic Asia",
+      "score": 84,
+      "rationale": "Classic Asia is a Tier 1 PB trip rich in temples, culture, and food, extensively matching user preferences for history, culture, and diverse experiences in Asia. Despite some previous travel in Asia, the breadth and classic nature of this trip maintain its appeal. It resonates with the user\u2019s desire for cultural exploration and new worlds."
+    },
+    {
+      "title": "Middle East North Africa",
+      "score": 82,
+      "rationale": "This Tier 1 SD trip traverses a unique blend of historic, religious, and desert landscapes appealing to the user\u2019s interest in history, culture, and new cultural experiences. Its geographic placement bridges Asia and Africa, increasing trip diversity. The moderate activity level suits the user's ambitious but sustainable travel style."
+    }
+  ],
+  "next_5": [
+    {
+      "title": "Switzerland West",
+      "score": 79,
+      "rationale": "Switzerland West offers stunning culture, food, and alpine scenery matching the user's love of mountains, lakes, and nature. While Tier 1 SD and in Europe, the user\u2019s prior travel in European alpine regions slightly lowers novelty. Its scenic diversity supports user preferences for outdoor activities and cultural depth."
+    },
+    {
+      "title": "Spain North",
+      "score": 78,
+      "rationale": "Spain North combines cultural richness with varied landscapes, aligning well with the user\u2019s interest in food, history, and architecture. As a Tier 1 SD trip within Europe, it fits the user's cultural ambitions. The moderate activity level matches the user's preference for physically engaging trips without extreme intensity."
+    },
+    {
+      "title": "Italy North",
+      "score": 76,
+      "rationale": "Italy North is a Tier 1 SD trip offering classic European culture, food, and architecture. The user has traveled to many Italian destinations, slightly reducing novelty, but the Northern focus and alpine lakes add some freshness matching landscape interests. The trip balances cities with natural beauty fitting the user's mixed preferences."
+    },
+    {
+      "title": "East Coast USA",
+      "score": 74,
+      "rationale": "East Coast USA is a Tier 1 SD trip with urban and natural experiences fitting the user's interest in culture, cities, and moderate activity. Being domestic for the user, it scores slightly lower on novelty but remains relevant due to its classic landmarks and varied landscapes. The road trip style aligns well with the user's enjoyment of driving and exploration."
+    },
+    {
+      "title": "Scandinavia",
+      "score": 72,
+      "rationale": "Scandinavia offers cultural depth, history, and distinctive northern landscapes that appeal to the user's scenic and cultural interests. Tier 1 SD and in Europe, it adds diversity in architecture and geography. The ferry and train travel modes support user preference for varied transport experiences."
+    }
+  ],
+  "audit_table": [
+    {
+      "title": "Classic Africa",
+      "score": 100,
+      "tier": "1",
+      "pb_sd": "PB",
+      "continent": "Africa"
+    },
+    {
+      "title": "Peru",
+      "score": 93,
+      "tier": "1",
+      "pb_sd": "SD",
+      "continent": "South America"
+    },
+    {
+      "title": "Classic Europe",
+      "score": 91,
+      "tier": "1",
+      "pb_sd": "PB",
+      "continent": "Europe"
+    },
+    {
+      "title": "Southeast Asia",
+      "score": 88,
+      "tier": "1",
+      "pb_sd": "SD",
+      "continent": "Asia"
+    },
+    {
+      "title": "Brazil & Argentina",
+      "score": 87,
+      "tier": "1",
+      "pb_sd": "SD",
+      "continent": "South America"
+    },
+    {
+      "title": "New Zealand",
+      "score": 85,
+      "tier": "1",
+      "pb_sd": "SD",
+      "continent": "Oceania"
+    },
+    {
+      "title": "Classic Asia",
+      "score": 84,
+      "tier": "1",
+      "pb_sd": "PB",
+      "continent": "Asia"
+    },
+    {
+      "title": "Middle East North Africa",
+      "score": 82,
+      "tier": "1",
+      "pb_sd": "SD",
+      "continent": "Asia/Africa"
+    },
+    {
+      "title": "Switzerland West",
+      "score": 79,
+      "tier": "1",
+      "pb_sd": "SD",
+      "continent": "Europe"
+    },
+    {
+      "title": "Spain North",
+      "score": 78,
+      "tier": "1",
+      "pb_sd": "SD",
+      "continent": "Europe"
+    },
+    {
+      "title": "Italy North",
+      "score": 76,
+      "tier": "1",
+      "pb_sd": "SD",
+      "continent": "Europe"
+    },
+    {
+      "title": "East Coast USA",
+      "score": 74,
+      "tier": "1",
+      "pb_sd": "SD",
+      "continent": "North America"
+    },
+    {
+      "title": "Scandinavia",
+      "score": 72,
+      "tier": "1",
+      "pb_sd": "SD",
+      "continent": "Europe"
+    },
+    {
+      "title": "Classic California USA",
+      "score": 70,
+      "tier": "1",
+      "pb_sd": "PB",
+      "continent": "North America"
+    },
+    {
+      "title": "Germany South",
+      "score": 68,
+      "tier": "1",
+      "pb_sd": "SD",
+      "continent": "Europe"
+    },
+    {
+      "title": "France South",
+      "score": 65,
+      "tier": "1",
+      "pb_sd": "SD",
+      "continent": "Europe"
+    },
+    {
+      "title": "Ireland, Scotland, England",
+      "score": 63,
+      "tier": "2",
+      "pb_sd": "SD",
+      "continent": "Europe"
+    },
+    {
+      "title": "Classic USA Southwest National Parks USA",
+      "score": 60,
+      "tier": "1",
+      "pb_sd": "SD",
+      "continent": "North America"
+    },
+    {
+      "title": "Italy South",
+      "score": 58,
+      "tier": "2",
+      "pb_sd": "SD",
+      "continent": "Europe"
+    },
+    {
+      "title": "Eastern Europe",
+      "score": 55,
+      "tier": "2",
+      "pb_sd": "SD",
+      "continent": "Europe"
+    },
+    {
+      "title": "Portugal",
+      "score": 52,
+      "tier": "2",
+      "pb_sd": "SD",
+      "continent": "Europe"
+    },
+    {
+      "title": "Switzerland East",
+      "score": 50,
+      "tier": "2",
+      "pb_sd": "SD",
+      "continent": "Europe"
+    },
+    {
+      "title": "Tanzania",
+      "score": 48,
+      "tier": "2",
+      "pb_sd": "SD",
+      "continent": "Africa"
+    },
+    {
+      "title": "Mexico",
+      "score": 46,
+      "tier": "2",
+      "pb_sd": "SD",
+      "continent": "North America"
+    },
+    {
+      "title": "Patagonia",
+      "score": 43,
+      "tier": "2",
+      "pb_sd": "SD",
+      "continent": "South America"
+    },
+    {
+      "title": "Costa Rica",
+      "score": 40,
+      "tier": "2",
+      "pb_sd": "SD",
+      "continent": "Central America"
+    },
+    {
+      "title": "Australia",
+      "score": 38,
+      "tier": "2",
+      "pb_sd": "SD",
+      "continent": "Oceania"
+    },
+    {
+      "title": "France South",
+      "score": 65,
+      "tier": "1",
+      "pb_sd": "SD",
+      "continent": "Europe"
+    },
+    {
+      "title": "Italy Mountains & Lakes",
+      "score": 35,
+      "tier": "2",
+      "pb_sd": "SD",
+      "continent": "Europe"
+    },
+    {
+      "title": "Gal\u00e1pagos",
+      "score": 33,
+      "tier": "2",
+      "pb_sd": "SD",
+      "continent": "South America"
+    },
+    {
+      "title": "Seychelles Islands",
+      "score": 30,
+      "tier": "1",
+      "pb_sd": "SD",
+      "continent": "Africa"
+    },
+    {
+      "title": "French Polynesia",
+      "score": 28,
+      "tier": "2",
+      "pb_sd": "SD",
+      "continent": "Oceania"
+    }
+  ]
+}

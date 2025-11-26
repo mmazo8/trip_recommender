@@ -1,0 +1,847 @@
+[
+  {
+    "title": "Classic Europe",
+    "tier": 1,
+    "pb_sd": "PB",
+    "continent": "Europe",
+    "transport_modes": [
+      "train",
+      "plane"
+    ],
+    "themes": [
+      "culture",
+      "food",
+      "history",
+      "architecture"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 8,
+    "region_examples": [
+      "London",
+      "Paris",
+      "Rome"
+    ],
+    "description": "Classic Europe visiting London, Paris, Rome and nearby regions."
+  },
+  {
+    "title": "Classic Asia",
+    "tier": 1,
+    "pb_sd": "PB",
+    "continent": "Asia",
+    "transport_modes": [
+      "train",
+      "plane"
+    ],
+    "themes": [
+      "culture",
+      "temples",
+      "food",
+      "nature"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Tokyo",
+      "Kyoto",
+      "Seoul"
+    ],
+    "description": "Classic Asia visiting Tokyo, Kyoto, Seoul and nearby regions."
+  },
+  {
+    "title": "Classic California USA",
+    "tier": 1,
+    "pb_sd": "PB",
+    "continent": "North America",
+    "transport_modes": [
+      "car"
+    ],
+    "themes": [
+      "cities",
+      "nature",
+      "road trip"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 6,
+    "region_examples": [
+      "Los Angeles",
+      "Yosemite",
+      "Lake Tahoe",
+      "San Francisco",
+      "Big Sur coast",
+      "Santa Barbara"
+    ],
+    "description": "Classic California USA visiting Los Angeles, Yosemite, Lake Tahoe and nearby regions."
+  },
+  {
+    "title": "Classic Africa",
+    "tier": 1,
+    "pb_sd": "PB",
+    "continent": "Africa",
+    "transport_modes": [
+      "car",
+      "plane"
+    ],
+    "themes": [
+      "safari",
+      "wildlife",
+      "nature",
+      "culture"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 6,
+    "region_examples": [
+      "Cape Town",
+      "Garden Route",
+      "Kruger National Park (Sabi Sands",
+      "etc.)",
+      "Panorama Route",
+      "Victoria Falls",
+      "Chobe NP"
+    ],
+    "description": "Classic Africa visiting Cape Town, Garden Route, Kruger National Park (Sabi Sands and nearby regions."
+  },
+  {
+    "title": "Italy North",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "Europe",
+    "transport_modes": [
+      "car",
+      "train"
+    ],
+    "themes": [
+      "culture",
+      "food",
+      "history",
+      "architecture"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Milan",
+      "Lake Como",
+      "Portofino",
+      "Florence",
+      "Tuscany",
+      "Venice"
+    ],
+    "description": "Italy North visiting Milan, Lake Como, Portofino and nearby regions."
+  },
+  {
+    "title": "Italy South",
+    "tier": 2,
+    "pb_sd": "SD",
+    "continent": "Europe",
+    "transport_modes": [
+      "train"
+    ],
+    "themes": [
+      "culture",
+      "food",
+      "history",
+      "architecture"
+    ],
+    "activity_level": 6,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Sardinia",
+      "Naples",
+      "Pompeii",
+      "Amalfi Coast/Positano",
+      "Paestum",
+      "Capri",
+      "Rome"
+    ],
+    "description": "Italy South visiting Sardinia, Naples, Pompeii and nearby regions."
+  },
+  {
+    "title": "Italy Mountains & Lakes",
+    "tier": 2,
+    "pb_sd": "SD",
+    "continent": "Europe",
+    "transport_modes": [
+      "car",
+      "train"
+    ],
+    "themes": [
+      "culture",
+      "food",
+      "history",
+      "architecture"
+    ],
+    "activity_level": 6,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Venice",
+      "Dolomites",
+      "Lake Como",
+      "Piedmont"
+    ],
+    "description": "Italy Mountains & Lakes visiting Venice, Dolomites, Lake Como and nearby regions."
+  },
+  {
+    "title": "France South",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "Europe",
+    "transport_modes": [
+      "car",
+      "train"
+    ],
+    "themes": [
+      "culture",
+      "food",
+      "history",
+      "architecture"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Grenoble",
+      "Verdon Gorge",
+      "Luberon",
+      "Cassis",
+      "Monaco",
+      "Nice"
+    ],
+    "description": "France South visiting Grenoble, Verdon Gorge, Luberon and nearby regions."
+  },
+  {
+    "title": "Spain North",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "Europe",
+    "transport_modes": [
+      "train"
+    ],
+    "themes": [
+      "culture",
+      "food",
+      "history",
+      "architecture"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Costa Brava",
+      "Barcelona",
+      "Madrid",
+      "Asturias",
+      "Picos de Europa",
+      "Bilbao",
+      "Biarritz"
+    ],
+    "description": "Spain North visiting Costa Brava, Barcelona, Madrid and nearby regions."
+  },
+  {
+    "title": "Portugal",
+    "tier": 2,
+    "pb_sd": "SD",
+    "continent": "Europe",
+    "transport_modes": [
+      "car",
+      "train"
+    ],
+    "themes": [
+      "culture",
+      "food",
+      "history",
+      "architecture"
+    ],
+    "activity_level": 6,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Algarve",
+      "Lisbon",
+      "Porto",
+      "Douro Valley"
+    ],
+    "description": "Portugal visiting Algarve, Lisbon, Porto and nearby regions."
+  },
+  {
+    "title": "Switzerland West",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "Europe",
+    "transport_modes": [
+      "train",
+      "car"
+    ],
+    "themes": [
+      "culture",
+      "food",
+      "history",
+      "architecture"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Geneva",
+      "Annecy",
+      "Chamonix",
+      "Zermatt",
+      "Lauterbrunnen"
+    ],
+    "description": "Switzerland West visiting Geneva, Annecy, Chamonix and nearby regions."
+  },
+  {
+    "title": "Switzerland East",
+    "tier": 2,
+    "pb_sd": "SD",
+    "continent": "Europe",
+    "transport_modes": [
+      "train",
+      "car"
+    ],
+    "themes": [
+      "culture",
+      "food",
+      "history",
+      "architecture"
+    ],
+    "activity_level": 6,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Milan",
+      "Lugano",
+      "Zermatt",
+      "Glacier & Bernina Express",
+      "St Moritz"
+    ],
+    "description": "Switzerland East visiting Milan, Lugano, Zermatt and nearby regions."
+  },
+  {
+    "title": "Germany South",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "Europe",
+    "transport_modes": [
+      "car"
+    ],
+    "themes": [
+      "culture",
+      "food",
+      "history",
+      "architecture"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Stuttgart",
+      "Lake Constance",
+      "Bavarian Alps",
+      "Romantic Road",
+      "Salzburg",
+      "Berchtesgaden",
+      "Hallstatt",
+      "Munich"
+    ],
+    "description": "Germany South visiting Stuttgart, Lake Constance, Bavarian Alps and nearby regions."
+  },
+  {
+    "title": "Ireland, Scotland, England",
+    "tier": 2,
+    "pb_sd": "SD",
+    "continent": "Europe",
+    "transport_modes": [
+      "car",
+      "train"
+    ],
+    "themes": [
+      "culture",
+      "food",
+      "history",
+      "architecture"
+    ],
+    "activity_level": 6,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Dublin",
+      "Edinburgh",
+      "London"
+    ],
+    "description": "Ireland, Scotland, England visiting Dublin, Edinburgh, London and nearby regions."
+  },
+  {
+    "title": "Eastern Europe",
+    "tier": 2,
+    "pb_sd": "SD",
+    "continent": "Europe",
+    "transport_modes": [
+      "train"
+    ],
+    "themes": [
+      "culture",
+      "food",
+      "history",
+      "architecture"
+    ],
+    "activity_level": 6,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Berlin",
+      "Prague",
+      "Vienna",
+      "Budapest"
+    ],
+    "description": "Eastern Europe visiting Berlin, Prague, Vienna and nearby regions."
+  },
+  {
+    "title": "Scandinavia",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "Europe",
+    "transport_modes": [
+      "ferry",
+      "train"
+    ],
+    "themes": [
+      "culture",
+      "food",
+      "history",
+      "architecture"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Amsterdam",
+      "Stockholm",
+      "Bergen",
+      "Norwegian Fjords"
+    ],
+    "description": "Scandinavia visiting Amsterdam, Stockholm, Bergen and nearby regions."
+  },
+  {
+    "title": "Greece",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "Europe",
+    "transport_modes": [
+      "ferry",
+      "car"
+    ],
+    "themes": [
+      "culture",
+      "food",
+      "history",
+      "architecture"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Santorini",
+      "Mykonos",
+      "Athens",
+      "Nafplio",
+      "Kefalonia",
+      "Zakynthos"
+    ],
+    "description": "Greece visiting Santorini, Mykonos, Athens and nearby regions."
+  },
+  {
+    "title": "Southeast Asia",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "Asia",
+    "transport_modes": [
+      "plane"
+    ],
+    "themes": [
+      "culture",
+      "temples",
+      "food",
+      "nature"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Thai Beaches (Railay Beach",
+      "etc.)",
+      "Bangkok",
+      "Angkor Wat",
+      "Hanoi"
+    ],
+    "description": "Southeast Asia visiting Thai Beaches (Railay Beach, etc.), Bangkok and nearby regions."
+  },
+  {
+    "title": "India North",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "Asia",
+    "transport_modes": [
+      "train"
+    ],
+    "themes": [
+      "culture",
+      "temples",
+      "food",
+      "nature"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Delhi",
+      "Corbett Tiger Reserve",
+      "Agra",
+      "Jaipur"
+    ],
+    "description": "India North visiting Delhi, Corbett Tiger Reserve, Agra and nearby regions."
+  },
+  {
+    "title": "China East",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "Asia",
+    "transport_modes": [
+      "train"
+    ],
+    "themes": [
+      "culture",
+      "temples",
+      "food",
+      "nature"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Hong Kong",
+      "Shanghai",
+      "Xian",
+      "Beijing",
+      "Great Wall of China"
+    ],
+    "description": "China East visiting Hong Kong, Shanghai, Xian and nearby regions."
+  },
+  {
+    "title": "Middle East North Africa",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "Asia/Africa",
+    "transport_modes": [
+      "car",
+      "plane"
+    ],
+    "themes": [
+      "history",
+      "religion",
+      "desert"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 8,
+    "region_examples": [
+      "Istanbul",
+      "Amman",
+      "Jerusalem",
+      "Petra",
+      "Cairo"
+    ],
+    "description": "Middle East North Africa visiting Istanbul, Amman, Jerusalem and nearby regions."
+  },
+  {
+    "title": "Tanzania",
+    "tier": 2,
+    "pb_sd": "SD",
+    "continent": "Africa",
+    "transport_modes": [
+      "car"
+    ],
+    "themes": [
+      "safari",
+      "wildlife",
+      "nature",
+      "culture"
+    ],
+    "activity_level": 6,
+    "cultural_depth": 6,
+    "region_examples": [
+      "Mount Kilimanjaro",
+      "Tarangire NP",
+      "Ngorongoro Crater",
+      "Serengeti NP"
+    ],
+    "description": "Tanzania visiting Mount Kilimanjaro, Tarangire NP, Ngorongoro Crater and nearby regions."
+  },
+  {
+    "title": "Seychelles Islands",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "Africa",
+    "transport_modes": [
+      "ferry"
+    ],
+    "themes": [
+      "safari",
+      "wildlife",
+      "nature",
+      "culture"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 6,
+    "region_examples": [
+      "Mah\u00e9",
+      "Praslin",
+      "Curieuse",
+      "La Digue"
+    ],
+    "description": "Seychelles Islands visiting Mah\u00e9, Praslin, Curieuse and nearby regions."
+  },
+  {
+    "title": "Mexico",
+    "tier": 2,
+    "pb_sd": "SD",
+    "continent": "North America",
+    "transport_modes": [
+      "car",
+      "plane"
+    ],
+    "themes": [
+      "cities",
+      "nature",
+      "road trip"
+    ],
+    "activity_level": 6,
+    "cultural_depth": 6,
+    "region_examples": [
+      "Canc\u00fan",
+      "Chich\u00e9n Itza",
+      "Oaxaca",
+      "Mexico City"
+    ],
+    "description": "Mexico visiting Canc\u00fan, Chich\u00e9n Itza, Oaxaca and nearby regions."
+  },
+  {
+    "title": "Peru",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "South America",
+    "transport_modes": [
+      "car",
+      "train",
+      "plane"
+    ],
+    "themes": [
+      "mountains",
+      "wildlife",
+      "culture",
+      "hiking"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 6,
+    "region_examples": [
+      "Lima",
+      "Sacred Valley",
+      "Machu Picchu",
+      "Lake Titicaca"
+    ],
+    "description": "Peru visiting Lima, Sacred Valley, Machu Picchu and nearby regions."
+  },
+  {
+    "title": "Gal\u00e1pagos",
+    "tier": 2,
+    "pb_sd": "SD",
+    "continent": "South America",
+    "transport_modes": [
+      "ferry"
+    ],
+    "themes": [
+      "mountains",
+      "wildlife",
+      "culture",
+      "hiking"
+    ],
+    "activity_level": 6,
+    "cultural_depth": 6,
+    "region_examples": [
+      "Santa Cruz",
+      "Bartolome",
+      "Isabela",
+      "San Cristobal"
+    ],
+    "description": "Gal\u00e1pagos visiting Santa Cruz, Bartolome, Isabela and nearby regions."
+  },
+  {
+    "title": "Patagonia",
+    "tier": 2,
+    "pb_sd": "SD",
+    "continent": "South America",
+    "transport_modes": [
+      "car"
+    ],
+    "themes": [
+      "mountains",
+      "wildlife",
+      "culture",
+      "hiking"
+    ],
+    "activity_level": 6,
+    "cultural_depth": 6,
+    "region_examples": [
+      "El Chalt\u00e9n",
+      "Perito Moreno Glacier",
+      "Torres del Paine NP"
+    ],
+    "description": "Patagonia visiting El Chalt\u00e9n, Perito Moreno Glacier, Torres del Paine NP and nearby regions."
+  },
+  {
+    "title": "Costa Rica",
+    "tier": 2,
+    "pb_sd": "SD",
+    "continent": "Central America",
+    "transport_modes": [
+      "car"
+    ],
+    "themes": [
+      "wildlife",
+      "rainforest",
+      "beaches"
+    ],
+    "activity_level": 6,
+    "cultural_depth": 6,
+    "region_examples": [
+      "Aren\u00e1l Volcano",
+      "Nicoya Peninsula",
+      "Monteverde Cloud Forest",
+      "Manuel Antonio NP"
+    ],
+    "description": "Costa Rica visiting Aren\u00e1l Volcano, Nicoya Peninsula, Monteverde Cloud Forest and nearby regions."
+  },
+  {
+    "title": "Brazil & Argentina",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "South America",
+    "transport_modes": [
+      "plane",
+      "car"
+    ],
+    "themes": [
+      "mountains",
+      "wildlife",
+      "culture",
+      "hiking"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 6,
+    "region_examples": [
+      "Rio de Janeiro",
+      "Iguaz\u00fa Falls",
+      "Pantanal",
+      "Buenos Aires"
+    ],
+    "description": "Brazil & Argentina visiting Rio de Janeiro, Iguaz\u00fa Falls, Pantanal and nearby regions."
+  },
+  {
+    "title": "Australia",
+    "tier": 2,
+    "pb_sd": "SD",
+    "continent": "Oceania",
+    "transport_modes": [
+      "plane"
+    ],
+    "themes": [
+      "beach",
+      "outdoors",
+      "scenery"
+    ],
+    "activity_level": 6,
+    "cultural_depth": 6,
+    "region_examples": [
+      "Melbourne",
+      "Great Barrier Reef",
+      "Sydney"
+    ],
+    "description": "Australia visiting Melbourne, Great Barrier Reef, Sydney and nearby regions."
+  },
+  {
+    "title": "New Zealand",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "Oceania",
+    "transport_modes": [
+      "car",
+      "train"
+    ],
+    "themes": [
+      "beach",
+      "outdoors",
+      "scenery"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 6,
+    "region_examples": [
+      "Christchurch",
+      "Queenstown",
+      "Milford Sound",
+      "Mt Cook NP"
+    ],
+    "description": "New Zealand visiting Christchurch, Queenstown, Milford Sound and nearby regions."
+  },
+  {
+    "title": "French Polynesia",
+    "tier": 2,
+    "pb_sd": "SD",
+    "continent": "Oceania",
+    "transport_modes": [
+      "ferry"
+    ],
+    "themes": [
+      "beach",
+      "outdoors",
+      "scenery"
+    ],
+    "activity_level": 6,
+    "cultural_depth": 6,
+    "region_examples": [
+      "Tahiti",
+      "Mo'orea",
+      "Bora Bora",
+      "Huahine"
+    ],
+    "description": "French Polynesia visiting Tahiti, Mo'orea, Bora Bora and nearby regions."
+  },
+  {
+    "title": "East Coast USA",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "North America",
+    "transport_modes": [
+      "train",
+      "car"
+    ],
+    "themes": [
+      "cities",
+      "nature",
+      "road trip"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 6,
+    "region_examples": [
+      "New York City",
+      "Washington DC"
+    ],
+    "description": "East Coast USA visiting New York City, Washington DC and nearby regions."
+  },
+  {
+    "title": "Southwest National Parks USA",
+    "tier": 1,
+    "pb_sd": "SD",
+    "continent": "North America",
+    "transport_modes": [
+      "car"
+    ],
+    "themes": [
+      "cities",
+      "nature",
+      "road trip"
+    ],
+    "activity_level": 5,
+    "cultural_depth": 6,
+    "region_examples": [
+      "Grand Canyon NP",
+      "Bryce Canyon NP",
+      "Zion NP",
+      "Las Vegas"
+    ],
+    "description": "Southwest National Parks USA visiting Grand Canyon NP, Bryce Canyon NP, Zion NP and nearby regions."
+  }
+]
